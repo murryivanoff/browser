@@ -101,9 +101,14 @@ class Browser
     # Return the platform.
     def platform
       case
-      when linux?     then :linux
-      when mac?       then :mac
-      when windows?   then :windows
+      when linux?                 then :linux
+      when mac?                   then :mac
+      when windows?               then :windows
+      when ios?                   then :ios
+      when android?               then :android
+      when windows_phone?         then :windows_phone
+      when chrome_os?             then :chrome_os
+      when blackberry?            then :blackberry
       else
         :other
       end
